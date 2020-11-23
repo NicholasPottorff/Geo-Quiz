@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Geo Quiz Version 0.0.1 </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <h1>Geography Quiz</h1>
+    <h2>What do you know about the world?</h2>
+    <br>
+    <br>
+    <br>
+    <h3>Current Topic: </h3>
+    <div class="dropdown">
+      <button id = "curtopic" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Capitals
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li>
+          <button onclick = "changeTopic(1)" id = "cap-button" class="btn btn-primary">Capitals</button>
+        </li>
+        <li>
+          <button onclick = "changeTopic(2)" id = "city-button" class="btn btn-primary">Largest City</button>
+        </li>
+        <li>
+          <button onclick = "changeTopic(3)" id = "pop-button" class="btn btn-primary">Population</button>
+        </li>
+        <li>
+          <button onclick = "changeTopic(4)" id = "area-button" class="btn btn-primary">Land Area</button>
+        </li>
+        <li>
+          <button onclick = "changeTopic(5)" id = "lang-button" class="btn btn-primary">Most Spoken Language</button>
+        </li>
+      </ul>
+    </div>
+    <br>
+    <button onclick = "createQuestion()" class="btn btn-primary">New Question</button>
+    <br>
+    <br>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h2 id = "question" ></h2>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <button onclick = "submit(1)" id = "opt1" class="btn btn-primary">Option 1</button>
+      <button onclick = "submit(2)" id = "opt2" class="btn btn-primary">Option 2</button>
+      <button onclick = "submit(3)" id = "opt3" class="btn btn-primary">Option 3</button>
+      <button onclick = "submit(4)" id = "opt4" class="btn btn-primary">Option 4</button>
+    </div>
+    <br>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h2 id = "result" ></h2>
+      </div>
+    </div>
+    <br>
+    <br>
+    <p class = "text-center">Page made by Nicholas Pottorff</p>
+    <script src = "quiz.js"></script>
+  </body>
+</html>
